@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 320px;
+    padding: 12px;
+    background-color: #7a044f;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input {
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    border: none;
+    transition: background-color 250ms ease-in-out;
+    outline: none;
+}
+
+.message {
+    font-size: 14px;
+    color: rgb(240, 11, 11);
+}
+
+.button {
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: #bd119b;
+    border: 2px solid transparent;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        background-color: #7a044f;
+        border: 2px solid #fafafa;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
